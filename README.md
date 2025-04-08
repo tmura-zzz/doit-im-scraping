@@ -70,8 +70,8 @@ DOIT_IM_EXPORT_FILE="doit-im-export.json"    # exportするファイル（json�
 
 以下のビューは無視します（時間かかるし量が多いとサーバに負荷もかかるので）。
 
-- #/completed
-- #/trash
+- #/completed （完了済み）
+- #/trash （ゴミ箱）
 - その他（上記に書いてないもの）
 
 ## 出力形式
@@ -91,15 +91,16 @@ DOIT_IM_EXPORT_FILE="doit-im-export.json"    # exportするファイル（json�
             {
               group-title:  # グループのタイトル（「優先度なし」とか「今週」とか、ビューによって異なる）
               group-size:   # グループに含まれるタスク数
-              tasks: {
-                id: string,        # タスクのID（タスクのリンクをつつくとURLに表示されるやつ）
-                title: string,     # タスクのタイトル
-                context: string,   # タスクのコンテキスト
-                project: string,   # タスクのプロジェクト
-                priority: int,     # タスクの優先度
-                notes: string,     # タスクのメモ
-                repeater: boolean, # タスクに繰り返し設定がされているか
-                time: string,      # タスクの開始時間（分類によっては未定義）
+              tasks: {      # タスクの属性
+                id: string,        # ID（タスクのリンクをつつくとURLに表示されるやつ）
+                title: string,     # タイトル
+                context: string,   # コンテキスト
+                project: string,   # プロジェクト
+                priority: int,     # 優先度
+                notes: string,     # メモ
+                repeater: boolean, # 繰り返し設定がされているか
+                repeat: string,    # 繰り返し条件
+                time: string,      # 開始時間（分類によっては未定義）
                 reminder: [ string, ... ]  # 通知の設定条件（複数あるので配列）
               }
             }, ...

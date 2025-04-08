@@ -1,6 +1,6 @@
-# Doit.im のデータを export するツール
+# Doit.im のデータを export するコード
 
-今更ですが[Doit.im](https://i.doit.im/)のデータを export するツールを作りました。  
+今更ですが[Doit.im](https://i.doit.im/)のデータを export するコードを書きました。
 かなり前からサポートされなくなってるようだけど Web 版を無料でずっと使い続けてて、
 そろそろ乗り換えようと思ったけど公式の export 機能がない。  
 [表示内容を印刷するブックマークレット](https://enblog.doit.im/post/16959256088/wanna-print-tasks-in-doitim-you-can-now)があるけど、なるべく情報維持して自作中の ToDo アプリに取り込みたいので目的に合わず..
